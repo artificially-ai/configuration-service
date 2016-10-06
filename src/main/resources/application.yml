@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: ${HOME}/development/git/microservices-config
+          uri: ${HOME}/development/ekholabs/git/microservices/microservices-config
 endpoints:
   refresh:
     enabled: true
