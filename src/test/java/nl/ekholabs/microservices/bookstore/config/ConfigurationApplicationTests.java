@@ -1,4 +1,4 @@
-package com.irdeto.rrm.ls;
+package nl.ekholabs.microservices.bookstore.config;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
