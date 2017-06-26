@@ -8,9 +8,7 @@ RUN git clone https://github.com/ekholabs/configuration-service
 WORKDIR configuration-service
 RUN ./gradlew clean build
 
-COPY build/libs/configuration-service-1.0-SNAPSHOT.jar ./configuration-service.jar
-
 EXPOSE 80
 
 ENTRYPOINT ["java"]
-CMD ["-server", "-Xmx256M", "-jar", "configuration-service.jar"]
+CMD ["-server", "-Xmx256M", "-jar", "build/libs/configuration-service-1.0-SNAPSHOT.jar"]
