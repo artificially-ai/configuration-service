@@ -1,19 +1,26 @@
 server:
-  port: 8888
+  port: 8082
+
 spring:
   cloud:
     config:
       server:
         git:
-          uri: file:///C:/development/ekholabs/git/microservices-config
+          uri: https://github.com/ekholabs/microservices-config.git
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${EUREKA_ADVERTISED_HOST_NAME:localhost}:8081/eureka/
+    healthcheck:
+      enabled: true
+
+management:
+  security:
+    enabled: false
+
 endpoints:
   refresh:
     enabled: true
   restart:
-    enabled: true
-    pause-endpoint:
-      enabled: true
-    resume-endpoint:
-      enabled: true
-  shutdown:
     enabled: true

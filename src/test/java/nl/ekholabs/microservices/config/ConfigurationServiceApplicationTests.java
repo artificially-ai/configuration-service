@@ -1,4 +1,4 @@
-package nl.ekholabs.microservices.bookstore.config;
+package nl.ekholabs.microservices.config;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class ConfigurationApplicationTests {
+public class ConfigurationServiceApplicationTests {
 
   @Test
   public void contextLoads() {
