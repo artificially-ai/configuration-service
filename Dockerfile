@@ -8,7 +8,9 @@ RUN git clone https://github.com/ekholabs/configuration-service
 WORKDIR configuration-service
 RUN ./gradlew clean build
 
-EXPOSE 8082
+ENV CONFIG_SERVER_PORT=8082
+
+EXPOSE $CONFIG_SERVER_PORT
 
 ENTRYPOINT ["java"]
 CMD ["-server", "-Xmx256M", "-jar", "build/libs/configuration-service-1.0-SNAPSHOT.jar"]
