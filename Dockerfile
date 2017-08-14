@@ -1,6 +1,6 @@
 FROM debian:latest
 
-RUN apt-get -y update && apt-get install -y openjdk-8-jre-headless openjdk-8-jdk maven git curl
+RUN apt-get -y update && apt-get install -y openjdk-8-jre vim procps curl
 
 COPY build/libs/configuration-service-1.0-SNAPSHOT.jar /ekholabs/configuration-service.jar
 
