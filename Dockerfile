@@ -18,4 +18,4 @@ ENV EUREKA_SERVICE_HOST_NAME=eureka-service
 EXPOSE $CONFIG_SERVER_PORT
 
 ENTRYPOINT ["java"]
-CMD ["-server", "-Xmx256M", "-jar", "configuration-service.jar"]
+CMD ["-server", "-Xmx128M", "-jar", "configuration-service.jar"]
